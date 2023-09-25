@@ -8,5 +8,10 @@ namespace MedOrder
 {
     internal class Titrator
     {
+        /*public TitrateDose(decimal upperDose, string upperDoseUnit, decimal lowerDose, string lowerDoseUnit)
+        {
+            //receive order
+            //find the dose titration by dividing medication order with stored medication
+        }*/
     }
 }
