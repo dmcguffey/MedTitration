@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "MedTitration.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MedTitration.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MedTitration.Models.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MedTitration.Models/1.0.0": {
+      "type": "project",
+      "path": "../MedOrder/MedTitration.Models.csproj",
+      "msbuildProject": "../MedOrder/MedTitration.Models.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "MedTitration.Models >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\dmcgu\\.nuget\\packages\\": {}
@@ -13,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedOrder\\MedTitration.Models.csproj",
-      "projectName": "MedTitration.Models",
-      "projectPath": "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedOrder\\MedTitration.Models.csproj",
+      "projectUniqueName": "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedTitration.Business\\MedTitration.Business.csproj",
+      "projectName": "MedTitration.Business",
+      "projectPath": "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedTitration.Business\\MedTitration.Business.csproj",
       "packagesPath": "C:\\Users\\dmcgu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedOrder\\obj\\",
+      "outputPath": "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedTitration.Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dmcgu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedOrder\\MedTitration.Models.csproj": {
+              "projectPath": "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedOrder\\MedTitration.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
