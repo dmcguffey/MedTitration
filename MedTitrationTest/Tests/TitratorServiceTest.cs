@@ -19,7 +19,7 @@ namespace MedTitration.Test.Tests
             //ACT
             var Dose = service.GiveDose(order, med);
             //ASSERT
-            Assert.Equals(dose, Dose); 
+            Xunit.Assert.Equal(dose, Dose);
         }
     }
 }
