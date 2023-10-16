@@ -10,16 +10,26 @@ namespace MedTitration.Test.Tests
     {
 
         [Theory]
-        [InlineData ("2 ml")]
+        [InlineData (50, 100, 2, "1 ml")]
 
-        public void GiveDose(Order order, Med med, string dose)
+        public void GiveDose(int OrderUpperDose, int MedUpperDose, int MedLowerDose, string dose)
         {
             //ARRANGE
+            Order order = new Order
+            {
+                UpperDose = OrderUpperDose,
+                LowerDoseUnit = "ml"
+            };
+            Med med = new Med
+            {
+                UpperDose = MedUpperDose,
+                LowerDose = MedLowerDose
+            };
             TitratorService service = new TitratorService();
             //ACT
             var Dose = service.GiveDose(order, med);
             //ASSERT
-            Assert.Equals(dose, Dose); 
+            Xunit.Assert.Equal(dose, Dose);
         }
     }
 }
