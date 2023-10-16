@@ -34,5 +34,23 @@ namespace MedTitration.Test.Tests
             //ASSERT
             Xunit.Assert.Equal(dose, Dose);
         }
+
+        [Theory]
+        [InlineData (1000, 2, "500 ml/hr")]
+
+        public void TitrateDripML(decimal MlDose, int hours, string rate)
+        {
+            //ARRANGE
+            Order order = new Order
+            {
+                LowerDose = MlDose,
+                TimeHours = hours
+            };
+            TitratorService service = new TitratorService();
+            //ACT
+            var CorrectRate = service.TitrateDripML(order);
+            //ASSERT
+            Xunit.Assert.Equal(rate, CorrectRate);
+        }
     }
 }

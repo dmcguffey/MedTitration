@@ -34,10 +34,10 @@ namespace MedTitration.Business.Services
 
         public string TitrateDripML(Order order)
         {
-            if (order.LowerDose < 0 || order.LowerDoseUnit.ToLower() != "ml") 
+        /*    if (order.LowerDose < 0 || order.LowerDoseUnit.ToLower() != "ml") 
             {
                 return "cannot provide dosage to infuse in ml. Please check your units.";
-            }
+            }*/
             var MeasuredDose = order.LowerDose / order.TimeHours;
             return ($"{MeasuredDose} ml/hr");
 
