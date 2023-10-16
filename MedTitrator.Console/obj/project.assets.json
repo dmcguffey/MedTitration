@@ -1,49 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "MedTitration.Business/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "MedTitration.Models": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/MedTitration.Business.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MedTitration.Business.dll": {}
-        }
-      },
-      "MedTitration.Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/MedTitration.Models.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MedTitration.Models.dll": {}
-        }
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "MedTitration.Business/1.0.0": {
-      "type": "project",
-      "path": "../MedTitration.Business/MedTitration.Business.csproj",
-      "msbuildProject": "../MedTitration.Business/MedTitration.Business.csproj"
-    },
-    "MedTitration.Models/1.0.0": {
-      "type": "project",
-      "path": "../MedOrder/MedTitration.Models.csproj",
-      "msbuildProject": "../MedOrder/MedTitration.Models.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "MedTitration.Business >= 1.0.0",
-      "MedTitration.Models >= 1.0.0"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\dmcgu\\.nuget\\packages\\": {}
@@ -71,14 +33,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedOrder\\MedTitration.Models.csproj": {
-              "projectPath": "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedOrder\\MedTitration.Models.csproj"
-            },
-            "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedTitration.Business\\MedTitration.Business.csproj": {
-              "projectPath": "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedTitration.Business\\MedTitration.Business.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
