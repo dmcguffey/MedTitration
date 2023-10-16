@@ -11,8 +11,11 @@ namespace MedTitration.Test.Tests
 
         [Theory]
         [InlineData (50, 100, 2, "1 ml")]
+        [InlineData (12.5, 25, 1, "0.5 ml")]
+        [InlineData (20, 20, 1, "1 ml")]
+        [InlineData (0, 100, 2, "Order not provided")]
 
-        public void GiveDose(int OrderUpperDose, int MedUpperDose, int MedLowerDose, string dose)
+        public void GiveDose(decimal OrderUpperDose, decimal MedUpperDose, decimal MedLowerDose, string dose)
         {
             //ARRANGE
             Order order = new Order
