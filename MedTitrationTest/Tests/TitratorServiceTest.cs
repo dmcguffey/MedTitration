@@ -37,6 +37,11 @@ namespace MedTitration.Test.Tests
 
         [Theory]
         [InlineData (1000, 2, "500 ml/hr")]
+        [InlineData (250, 3, "83.33 ml/hr")]
+        [InlineData (500, 1, "500 ml/hr")]
+        [InlineData (1000, 3, "333.33 ml/hr")]
+        [InlineData (100, 5, "20 ml/hr")]
+        [InlineData (0, 0, "Cannot provide rate.")]
 
         public void TitrateDripML(decimal MlDose, int hours, string rate)
         {
