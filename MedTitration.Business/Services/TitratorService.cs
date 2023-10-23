@@ -47,11 +47,5 @@ namespace MedTitration.Business.Services
         {
             return ($"{order.UpperDose / order.TimeHours} mg/hr");
         }
-
-        public string ConvertMgToMcG(Order order)
-        {
-            var McgDose = order.UpperDose * 1000;
-            return ($"{McgDose / (order.TimeHours * 60)}");
-        }
     }
 }

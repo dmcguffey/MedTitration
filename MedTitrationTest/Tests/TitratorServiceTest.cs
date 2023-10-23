@@ -43,7 +43,7 @@ namespace MedTitration.Test.Tests
         [InlineData (100, 5, "20 ml/hr")]
         [InlineData (0, 0, "Cannot provide rate.")]
 
-        public void TitrateDripML(decimal MlDose, int hours, string rate)
+        public void TitrateDripMl(decimal MlDose, int hours, string rate)
         {
             //ARRANGE
             Order order = new Order
@@ -54,6 +54,23 @@ namespace MedTitration.Test.Tests
             TitratorService service = new TitratorService();
             //ACT
             var CorrectRate = service.TitrateDripML(order);
+            //ASSERT
+            Xunit.Assert.Equal(rate, CorrectRate);
+        }
+
+        [Theory]
+        [InlineData (250, 1, "250 mg/hr")]
+        public void TitrateDripMg(decimal MgDose, int hours, string rate)
+        {
+            //ARRANGE
+            Order order = new Order
+            {
+                UpperDose = MgDose,
+                TimeHours = hours
+            };
+            TitratorService service = new TitratorService();
+            //ACT
+            var CorrectRate = service.TitrateDripMg(order);
             //ASSERT
             Xunit.Assert.Equal(rate, CorrectRate);
         }
