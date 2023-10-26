@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace MedTitration.Business.Services
 {
-    public class OrderService : IOrderService
+    public class OrderService
     {
         public OrderService()
         {
                 
         }
-        public void GetOrder(Order order)
+        public static void GetOrder(Order order)
         {
             Console.WriteLine(" ------------------ ORDER INFORMATION ------------------ ");
             Console.WriteLine("Enter medication name:");
