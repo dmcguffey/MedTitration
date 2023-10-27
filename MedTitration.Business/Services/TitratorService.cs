@@ -27,7 +27,7 @@ namespace MedTitration.Business.Services
             //CorrectDose = 1ml
             var CorrectDose = order.UpperDose / (med.UpperDose / med.LowerDose);
 
-            return ($"{CorrectDose} {order.LowerDoseUnit}");
+            return ($"{CorrectDose} {order.Ml}");
 
 
         }
@@ -39,13 +39,13 @@ namespace MedTitration.Business.Services
                 return "Cannot provide rate.";
             }
             var MeasuredDose = order.LowerDose / order.TimeHours;
-            return ($"{Math.Round(MeasuredDose, 2)} ml/hr");
+            return ($"{Math.Round(MeasuredDose, 2)} {order.Ml}/hr");
 
         }
 
         public string TitrateDripMg(Order order)
         {
-            return ($"{order.UpperDose / order.TimeHours} mg/hr");
+            return ($"{order.UpperDose / order.TimeHours} {order.Mg}/hr");
         }
     }
 }
