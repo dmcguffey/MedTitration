@@ -10,24 +10,24 @@ namespace MedTitration.Business.Services
     public class TitratorService
     {
         public TitratorService() { }
-
+        //for IV push medications
         public string GiveDose(Order order, Med med)
         {
-            if (order == null)
+            if (order == null || order.UpperDose == 0 && order.LowerDose == 0)
             {
                 return ("Order not provided.");
             }
-            if (med == null)
+            if (med == null || med.UpperDose == 0 && med.LowerDose == 0)
             {
                 return ("Medication not stocked in supply. Unable to provide the dose.");
             }
-            //CorrectDose = Order / StockConcentration
-            //CorrectDose = (50mg) / (100mg / 2ml)
-            //CorrectDose = 50mg / (50mg/ 1ml)
-            //CorrectDose = 1ml
-            var CorrectDose = order.UpperDose / (med.UpperDose / med.LowerDose);
+            else
+            {
+                var CorrectDose = order.UpperDose / (med.UpperDose / med.LowerDose);
 
-            return ($"{CorrectDose} {order.LowerDoseUnit}");
+                return ($"{CorrectDose} {order.LowerDoseUnit}");
+            }
+
 
 
         }
@@ -38,6 +38,11 @@ namespace MedTitration.Business.Services
             {
                 return "Cannot provide rate.";
             }
+
+            if (order.TimeHours == 0)
+            {
+                return "Bolus";
+            }
             var MeasuredDose = order.LowerDose / order.TimeHours;
             return ($"{Math.Round(MeasuredDose, 2)} ml/hr");
 
@@ -45,7 +50,16 @@ namespace MedTitration.Business.Services
 
         public string TitrateDripMg(Order order)
         {
-            return ($"{order.UpperDose / order.TimeHours} mg/hr");
+            if (order == null || order.UpperDose == 0)
+            {
+                return "Cannot provide rate.";
+            }
+
+            if (order.TimeHours == 0)
+            {
+                return "Bolus";
+            }
+            return ($"{Math.Round((order.UpperDose / order.TimeHours), 2)} mg/hr");
         }
     }
 }
