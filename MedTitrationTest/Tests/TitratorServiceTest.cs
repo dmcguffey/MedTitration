@@ -13,7 +13,8 @@ namespace MedTitration.Test.Tests
         [InlineData (50, 100, 2, "1 ml")]
         [InlineData (12.5, 25, 1, "0.5 ml")]
         [InlineData (20, 20, 1, "1 ml")]
-        [InlineData (0, 100, 2, "Order not provided")]
+        [InlineData (0, 100, 2, "Order not provided.")]
+        [InlineData (100, 0, 0, "Medication not stocked in supply. Unable to provide the dose.")]
 
         public void GiveDose(decimal OrderUpperDose, decimal MedUpperDose, decimal MedLowerDose, string dose)
         {
@@ -42,6 +43,7 @@ namespace MedTitration.Test.Tests
         [InlineData (1000, 3, "333.33 ml/hr")]
         [InlineData (100, 5, "20 ml/hr")]
         [InlineData (0, 0, "Cannot provide rate.")]
+        [InlineData (1000, 0, "Bolus")]
 
         public void TitrateDripMl(decimal MlDose, int hours, string rate)
         {
@@ -60,6 +62,10 @@ namespace MedTitration.Test.Tests
 
         [Theory]
         [InlineData (250, 1, "250 mg/hr")]
+        [InlineData (1000, 3, "333.33 mg/hr")]
+        [InlineData (0, 1, "Cannot provide rate.")]
+        [InlineData (100, 0, "Bolus")]
+
         public void TitrateDripMg(decimal MgDose, int hours, string rate)
         {
             //ARRANGE
