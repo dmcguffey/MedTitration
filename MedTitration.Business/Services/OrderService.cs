@@ -22,12 +22,10 @@ namespace MedTitration.Business.Services
             Console.WriteLine("Enter the ordered dosage: ");
             order.UpperDose = decimal.Parse(Console.ReadLine());
             Console.WriteLine("What unit of measurement?");
-            order.UpperDoseUnit = Console.ReadLine();
             Console.WriteLine("Now the lower number measurement:");
             order.LowerDose = decimal.Parse(Console.ReadLine());
             Console.WriteLine("Measured in: ");
-            order.LowerDoseUnit = Console.ReadLine();
-            if (order.LowerDose >= 50 && order.LowerDoseUnit.ToLower() == "ml")
+            if (order.LowerDose >= 50)
             {
                 Console.WriteLine("This dose requires a duration to give. How long are you wanting to distribute dose?");
                 order.TimeHours = int.Parse(Console.ReadLine());
@@ -43,7 +41,7 @@ namespace MedTitration.Business.Services
                 order.TimeHours = 0;
             }
 
-            Console.WriteLine($"{order.UpperDose}{order.UpperDoseUnit}/{order.LowerDose}{order.LowerDose} \n To be given over {order.TimeHours} hours.");
+            Console.WriteLine($"Order Confirmed: {order.UpperDose}{order.Mg}/{order.LowerDose}{order.Ml} \n To be given over {order.TimeHours} hours.");
             Console.WriteLine(" ------------------------------------------------------ ");
         }
     }
