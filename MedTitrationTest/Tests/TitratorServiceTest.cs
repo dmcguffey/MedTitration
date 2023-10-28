@@ -22,7 +22,6 @@ namespace MedTitration.Test.Tests
             Order order = new Order
             {
                 UpperDose = OrderUpperDose,
-                LowerDoseUnit = "ml"
             };
             Med med = new Med
             {
