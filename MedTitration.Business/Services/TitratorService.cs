@@ -10,7 +10,6 @@ namespace MedTitration.Business.Services
     public class TitratorService
     {
         public TitratorService() { }
-        //for IV push medications
         public string GiveDose(Order order, Med med)
         {
             if (order == null || order.UpperDose == 0 && order.LowerDose == 0)
