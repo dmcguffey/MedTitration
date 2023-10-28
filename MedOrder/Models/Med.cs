@@ -12,8 +12,8 @@ namespace MedTitration.Models.Models
 
         public string Name { get; set; }
         public decimal UpperDose { get; set; }
-        public string UpperDoseUnit { get; set; }
+        public string Mg = "mg";
         public decimal LowerDose { get; set; }
-        public string LowerDoseUnitUnit { get; set;}
+        public string Ml = "ml";
     }
 }
