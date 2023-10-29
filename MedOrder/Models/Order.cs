@@ -9,11 +9,13 @@ namespace MedTitration.Models.Models
     public class Order
     {
         public Order() { }
-        public string MedName { get; set; }
+
+        public string Name { get; set; }
         public decimal UpperDose { get; set; }
         public string Mg = "mg";
         public decimal LowerDose { get; set; }
         public string Ml = "ml";
+
         public int TimeHours { get; set; }
     }
 }
