@@ -24,7 +24,6 @@ namespace MedTitration.Business.Services
             Console.WriteLine("What unit of measurement?");
             Console.WriteLine("Now the lower number measurement:");
             order.LowerDose = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("Measured in: ");
             if (order.LowerDose >= 50)
             {
                 Console.WriteLine("This dose requires a duration to give. How long are you wanting to distribute dose?");

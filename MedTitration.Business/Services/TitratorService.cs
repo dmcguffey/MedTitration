@@ -10,6 +10,7 @@ namespace MedTitration.Business.Services
     public class TitratorService
     {
         public TitratorService() { }
+        //for IV push medications
         public string GiveDose(Order order, Med med)
         {
             if (order == null || order.UpperDose == 0 && order.LowerDose == 0)
@@ -24,7 +25,7 @@ namespace MedTitration.Business.Services
             {
                 var CorrectDose = order.UpperDose / (med.UpperDose / med.LowerDose);
 
-                return ($"{CorrectDose} {order.Ml}");
+                return ($"{CorrectDose} {order.LowerDoseUnit}");
             }
 
 

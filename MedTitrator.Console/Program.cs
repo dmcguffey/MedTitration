@@ -11,7 +11,7 @@ public class Program
 
         TitratorService titrate = new TitratorService();
 
-        if (order.LowerDose > 10 && order.LowerDoseUnit.ToLower() == "ml")
+        if (order.LowerDose > 10)
         {
             Console.WriteLine(titrate.TitrateDripML);
         }
