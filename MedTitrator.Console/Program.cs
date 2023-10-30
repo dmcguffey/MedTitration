@@ -6,6 +6,19 @@ public class Program
 {
     private static void Main(string[] args)
     {
-        throw new NotImplementedException();
+       Order order = new Order();
+       OrderService.GetOrder(order);
+
+        TitratorService titrate = new TitratorService();
+
+        if (order.LowerDose > 10)
+        {
+            Console.WriteLine(titrate.TitrateDripML);
+            Console.WriteLine(titrate.TitrateDripMg);
+        }
+        else 
+        {
+            Console.WriteLine(titrate.GiveDose);
+        }
     }
 }
