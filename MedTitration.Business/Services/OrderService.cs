@@ -18,7 +18,7 @@ namespace MedTitration.Business.Services
         {
             Console.WriteLine(" ------------------ ORDER INFORMATION ------------------ ");
             Console.WriteLine("Enter medication name:");
-            order.MedName = Console.ReadLine();
+            order.Name = Console.ReadLine();
             Console.WriteLine("Enter the ordered dosage: ");
             order.UpperDose = decimal.Parse(Console.ReadLine());
             Console.WriteLine("What unit of measurement?");
