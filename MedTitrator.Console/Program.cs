@@ -14,6 +14,11 @@ public class Program
         if (order.LowerDose > 10)
         {
             Console.WriteLine(titrate.TitrateDripML);
+            Console.WriteLine(titrate.TitrateDripMg);
+        }
+        else
+        {
+            Console.WriteLine(titrate.GiveDose);
         }
     }
 }
