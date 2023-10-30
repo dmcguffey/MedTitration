@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace MedTitration.Business.Services
 {
-    public class OrderService : IOrderService
+    public class OrderService
     {
         public OrderService()
         {
                 
         }
-        public void GetOrder(Order order)
+        public static void GetOrder(Order order)
         {
             Console.WriteLine(" ------------------ ORDER INFORMATION ------------------ ");
             Console.WriteLine("Enter medication name:");
@@ -24,7 +24,6 @@ namespace MedTitration.Business.Services
             Console.WriteLine("What unit of measurement?");
             Console.WriteLine("Now the lower number measurement:");
             order.LowerDose = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("Measured in: ");
             if (order.LowerDose >= 50)
             {
                 Console.WriteLine("This dose requires a duration to give. How long are you wanting to distribute dose?");

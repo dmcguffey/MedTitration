@@ -10,6 +10,7 @@ namespace MedTitration.Business.Services
     public class TitratorService
     {
         public TitratorService() { }
+        //for IV push medications
         public string GiveDose(Order order, Med med)
         {
             if (order == null || order.UpperDose == 0 && order.LowerDose == 0)
@@ -43,7 +44,7 @@ namespace MedTitration.Business.Services
                 return "Bolus";
             }
             var MeasuredDose = order.LowerDose / order.TimeHours;
-            return ($"{Math.Round(MeasuredDose, 2)} ml/hr");
+            return ($"{Math.Round(MeasuredDose, 2)} {order.Ml}/hr");
 
         }
 
@@ -58,7 +59,7 @@ namespace MedTitration.Business.Services
             {
                 return "Bolus";
             }
-            return ($"{Math.Round((order.UpperDose / order.TimeHours), 2)} mg/hr");
+            return ($"{Math.Round((order.UpperDose / order.TimeHours), 2)} {order.Mg}/hr");
         }
     }
 }
