@@ -21,8 +21,6 @@ namespace MedTitration.Business.Services
             order.Name = Console.ReadLine();
             Console.WriteLine("Enter the ordered dosage: ");
             order.UpperDose = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("What unit of measurement?");
-            Console.WriteLine("Now the lower number measurement:");
             order.LowerDose = decimal.Parse(Console.ReadLine());
             if (order.LowerDose >= 50)
             {
