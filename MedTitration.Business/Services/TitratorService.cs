@@ -11,59 +11,55 @@ namespace MedTitration.Business.Services
     {
         public TitratorService() { }
         //for IV push medications
-        public string GiveDose(Order order, Med med)
+        public void GiveDose(Order order, Med med)
         {
             if (order == null || order.UpperDose == 0 && order.LowerDose == 0)
             {
-                return ("Order not provided.");
+                Console.WriteLine("Order not provided.");
             }
             if (med == null || med.UpperDose == 0 && med.LowerDose == 0)
             {
-                return ("Medication not stocked in supply. Unable to provide the dose.");
+                Console.WriteLine("Medication not stocked in supply. Unable to provide the dose.");
             }
             else
             {
                 var CorrectDose = order.UpperDose / (med.UpperDose / med.LowerDose);
 
-<<<<<<< HEAD
-                return ($"{CorrectDose} {order.Ml}");
-=======
-                return ($"{CorrectDose} {order.LowerDoseUnit}");
->>>>>>> develop
+                Console.WriteLine($"{CorrectDose} {order.Ml}");
             }
 
 
 
         }
 
-        public string TitrateDripML(Order order)
+        public void TitrateDripML(Order order)
         {
             if (order == null || order.LowerDose == 0) 
             {
-                return "Cannot provide rate.";
+                Console.WriteLine("Cannot provide rate.");
             }
 
             if (order.TimeHours == 0)
             {
-                return "Bolus";
+                Console.WriteLine("Bolus");
             }
             var MeasuredDose = order.LowerDose / order.TimeHours;
-            return ($"{Math.Round(MeasuredDose, 2)} ml/hr");
+            Console.WriteLine($"{Math.Round(MeasuredDose, 2)} {order.Ml}/hr");
 
         }
 
-        public string TitrateDripMg(Order order)
+        public void TitrateDripMg(Order order)
         {
             if (order == null || order.UpperDose == 0)
             {
-                return "Cannot provide rate.";
+                Console.WriteLine("Cannot provide rate.");
             }
 
             if (order.TimeHours == 0)
             {
-                return "Bolus";
+                Console.WriteLine("Bolus");
             }
-            return ($"{Math.Round((order.UpperDose / order.TimeHours), 2)} mg/hr");
+            Console.WriteLine($"{Math.Round((order.UpperDose / order.TimeHours), 2)} {order.Mg}/hr");
         }
     }
 }
