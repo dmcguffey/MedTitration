@@ -8,17 +8,18 @@ public class Program
     {
        Order order = new Order();
        OrderService.GetOrder(order);
+        
 
         TitratorService titrate = new TitratorService();
 
         if (order.LowerDose > 10)
         {
-            Console.WriteLine(titrate.TitrateDripML);
-            Console.WriteLine(titrate.TitrateDripMg);
+            titrate.TitrateDripML(order);
+            titrate.TitrateDripMg(order);
         }
         else 
         {
-            Console.WriteLine(titrate.GiveDose);
+            titrate.GiveDose(order) ;
         }
     }
 }
