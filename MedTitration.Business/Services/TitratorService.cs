@@ -25,7 +25,7 @@ namespace MedTitration.Business.Services
             {
                 var CorrectDose = order.UpperDose / (med.UpperDose / med.LowerDose);
 
-                return ($"{CorrectDose} {order.LowerDoseUnit}");
+                return ($"{CorrectDose} {order.Ml}");
             }
 
 
