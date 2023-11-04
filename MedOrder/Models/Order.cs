@@ -16,6 +16,6 @@ namespace MedTitration.Models.Models
         public decimal LowerDose { get; set; }
         public string Ml = "ml";
 
-        public int TimeHours { get; set; }
+        public decimal TimeHours { get; set; }
     }
 }

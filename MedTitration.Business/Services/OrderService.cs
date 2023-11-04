@@ -19,19 +19,22 @@ namespace MedTitration.Business.Services
             Console.WriteLine(" ------------------ ORDER INFORMATION ------------------ ");
             Console.WriteLine("Enter medication name:");
             order.Name = Console.ReadLine();
-            Console.WriteLine("Enter the ordered dosage: ");
+            Console.WriteLine("Enter the ordered dosage in mg/ml: ");
             order.UpperDose = decimal.Parse(Console.ReadLine());
             order.LowerDose = decimal.Parse(Console.ReadLine());
             if (order.LowerDose >= 50)
             {
                 Console.WriteLine("This dose requires a duration to give. How long are you wanting to distribute dose?");
-                order.TimeHours = int.Parse(Console.ReadLine());
+                order.TimeHours = decimal.Parse(Console.ReadLine());
+                if(order.TimeHours >= 48)
+                {
                 do
                 {
                     Console.WriteLine("Outside of general safety parameters. Please give a safe time dosage.");
                     order.TimeHours = int.Parse(Console.ReadLine());
                 }
                 while (order.TimeHours > 48);
+                }
             }
             else
             {

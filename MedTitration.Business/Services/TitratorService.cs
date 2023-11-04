@@ -43,7 +43,7 @@ namespace MedTitration.Business.Services
             {
                 return "Bolus";
             }
-            var MeasuredDose = order.LowerDose / order.TimeHours;
+          var MeasuredDose = order.LowerDose / order.TimeHours;
             return ($"{Math.Round(MeasuredDose, 2)} {order.Ml}/hr");
 
         }

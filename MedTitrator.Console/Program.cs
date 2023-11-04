@@ -24,7 +24,7 @@ public class Program
         }
         else 
         {
-            titrate.GiveDose(order, med) ;
+            Console.WriteLine(titrate.GiveDose(order, med));
         }
     }
 }
