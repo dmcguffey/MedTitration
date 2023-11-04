@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedOrder\\MedOrder.csproj",
-      "projectName": "MedOrder",
-      "projectPath": "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedOrder\\MedOrder.csproj",
+      "projectUniqueName": "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedOrder\\MedTitration.Models.csproj",
+      "projectName": "MedTitration.Models",
+      "projectPath": "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedOrder\\MedTitration.Models.csproj",
       "packagesPath": "C:\\Users\\dmcgu\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedOrder\\obj\\",
       "projectStyle": "PackageReference",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MedTitration.Business/1.0.0": {
+        "dependencies": {
+          "MedTitration.Models": "1.0.0"
+        },
+        "runtime": {
+          "MedTitration.Business.dll": {}
+        }
+      },
+      "MedTitration.Models/1.0.0": {
+        "runtime": {
+          "MedTitration.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MedTitration.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MedTitration.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

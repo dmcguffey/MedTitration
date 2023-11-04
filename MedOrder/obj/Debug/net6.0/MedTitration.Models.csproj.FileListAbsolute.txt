@@ -1,0 +1,11 @@
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedOrder\bin\Debug\net6.0\MedTitration.Models.deps.json
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedOrder\bin\Debug\net6.0\MedTitration.Models.dll
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedOrder\bin\Debug\net6.0\MedTitration.Models.pdb
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedOrder\obj\Debug\net6.0\MedTitration.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedOrder\obj\Debug\net6.0\MedTitration.Models.AssemblyInfoInputs.cache
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedOrder\obj\Debug\net6.0\MedTitration.Models.AssemblyInfo.cs
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedOrder\obj\Debug\net6.0\MedTitration.Models.csproj.CoreCompileInputs.cache
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedOrder\obj\Debug\net6.0\MedTitration.Models.dll
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedOrder\obj\Debug\net6.0\refint\MedTitration.Models.dll
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedOrder\obj\Debug\net6.0\MedTitration.Models.pdb
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedOrder\obj\Debug\net6.0\ref\MedTitration.Models.dll

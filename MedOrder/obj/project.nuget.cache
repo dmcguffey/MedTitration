@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nG4ivimcVmo9NxXjSQxew26q5C7i7O+jmK1OZI1dIwl/pSqntTA4QBAneYPQKoLKCb1j4rnlmOn6QKq50xRYoA==",
+  "dgSpecHash": "9eLU9Jdnizo9HoEz7bC/LVRJRO1VVWHBfo6ddELB4m6pdV2NNPMTDUV9zDBAH4WjzUuCSX/R28JNXE7qgfeUeg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedOrder\\MedOrder.csproj",
+  "projectFilePath": "C:\\Users\\dmcgu\\Desktop\\Projects\\MedTitration\\MedOrder\\MedTitration.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

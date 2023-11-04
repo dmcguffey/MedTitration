@@ -1,0 +1,15 @@
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedTitration.Business\obj\Debug\net6.0\MedTitration.Business.csproj.AssemblyReference.cache
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedTitration.Business\obj\Debug\net6.0\MedTitration.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedTitration.Business\obj\Debug\net6.0\MedTitration.Business.AssemblyInfoInputs.cache
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedTitration.Business\obj\Debug\net6.0\MedTitration.Business.AssemblyInfo.cs
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedTitration.Business\obj\Debug\net6.0\MedTitration.Business.csproj.CoreCompileInputs.cache
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedTitration.Business\bin\Debug\net6.0\MedTitration.Business.deps.json
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedTitration.Business\bin\Debug\net6.0\MedTitration.Business.dll
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedTitration.Business\bin\Debug\net6.0\MedTitration.Business.pdb
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedTitration.Business\bin\Debug\net6.0\MedTitration.Models.dll
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedTitration.Business\bin\Debug\net6.0\MedTitration.Models.pdb
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedTitration.Business\obj\Debug\net6.0\MedTitration.Business.csproj.CopyComplete
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedTitration.Business\obj\Debug\net6.0\MedTitration.Business.dll
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedTitration.Business\obj\Debug\net6.0\refint\MedTitration.Business.dll
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedTitration.Business\obj\Debug\net6.0\MedTitration.Business.pdb
+C:\Users\dmcgu\Desktop\Projects\MedTitration\MedTitration.Business\obj\Debug\net6.0\ref\MedTitration.Business.dll
