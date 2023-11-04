@@ -8,6 +8,11 @@ public class Program
     {
        Order order = new Order();
        OrderService.GetOrder(order);
+
+        Med med = new Med 
+        {Name =  "Solumedrol", 
+         UpperDose = 100,
+         LowerDose = 2, } ;
         
 
         TitratorService titrate = new TitratorService();
@@ -19,7 +24,7 @@ public class Program
         }
         else 
         {
-            titrate.GiveDose(order) ;
+            titrate.GiveDose(order, med) ;
         }
     }
 }
