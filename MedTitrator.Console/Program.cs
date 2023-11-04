@@ -19,8 +19,8 @@ public class Program
 
         if (order.LowerDose > 10)
         {
-            titrate.TitrateDripML(order);
-            titrate.TitrateDripMg(order);
+            Console.WriteLine(titrate.TitrateDripML(order));
+            Console.WriteLine(titrate.TitrateDripMg(order));
         }
         else 
         {
